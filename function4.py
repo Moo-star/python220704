@@ -32,8 +32,42 @@ for x in [2,3,4,5,6,7]:
 print("---break---")
 lst = [1,2,3,4,5,6,7,8,9,10]
 for i in lst:
+    # 블록 주석 처리 :ctrl + /
     if i > 5:
         break
     print("Item: {0}".format(i))
-    
 
+    print("---continue---")
+lst = [1,2,3,4,5,6,7,8,9,10]
+for i in lst:
+    # 블록 주석 처리 :ctrl + /
+    if i % 2 == 0:
+        continue
+    print("Item: {0}".format(i))
+
+print("리스트 컴프리헨션")
+lst = list(range(1, 11))
+print([i**2 for i in lst if i > 5])
+tp = ("apple", "banana", "orange")
+print([len(i) for i in tp])
+
+
+print("---필터함수---")
+lst = [10, 25,30]
+filterL = filter(None, lst)
+for i in filterL:
+    print(i)
+
+# 함수정의
+def getBiggerThan20(i):
+    return i > 20
+
+print("---필터함수 적용---")
+filterL = filter(getBiggerThan20, lst)
+for i in filterL:
+    print(i)
+
+print("---filter 함수 with lambda---")
+filterLA = filter(lambda x:x>20, lst)
+for i in filterLA:
+    print(i)
