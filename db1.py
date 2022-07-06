@@ -2,7 +2,7 @@
 
 import sqlite3
 
-# 메모리에서 작업
+# 메모리에서 작업(약간의 약속된 문자열)
 con = sqlite3.connect(":memory:")
 # 커서객체를 리턴
 cur = con.cursor()
