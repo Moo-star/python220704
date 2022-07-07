@@ -10,7 +10,7 @@ f = open("c:\\work\\land.txt", "wt", encoding="utf-8")
 for n in range(1,10):
         #클리앙의 중고장터 주소  ### change
         # data ='https://price.joinsland.joins.com/theme/index_theme.asp?CSRFToken=QTBXHIeBclsWuqhLwvMtGyPvQJwMBKgRjVsBUjsP&sisaegbn=T07&areaCode=4141000000&searchgbn=&page=' + str(n)
-        data ='https://price.joinsland.joins.com/theme/index_theme.asp?CSRFToken=QoirJNvBMKgtFgSKqmIjdNVhwHBjlNkdeoiuTPvs&sisaegbn=T07&areaCode=4111700000&searchgbn=&page=' + str(n)
+        data ='https://price.joinsland.joins.com/theme/index_theme.asp?sisaegbn=T05&page=' + str(n)
         print (data)
         #웹브라우져 헤더 추가 
         req = urllib.request.Request(data, \
